@@ -21,12 +21,12 @@ for l in range(1,nr_numbers+1):
 for l in range(1,nr_symbols+1):
   password_symbol+=random.choice(symbols)
 p_list=[]
-p_string=""
+p_str=""
 password_string=password_letter+password_number+password_symbol
 for p in password_string:
   p_list+=p
 random.shuffle(p_list)
 for p in p_list:
-  p_string+=p
-print(p_string)
+  p_str+=p
+print(p_str)
   
